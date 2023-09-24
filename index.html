@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Profile</title>
+    <style>
+        /* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+   
+}
+
+/* Define overall styling */
+body {
+    font-family: Times New Roman, serif , sans-serif;
+    background-color: white;
+}
+@media only screen and (max-width: 4200px) {
+		}
+		
+/* design for large screens */
+        @media only screen and (max-width: 4200px) {
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+   
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 25px;
+    font-family: Times New Roman, serif , sans-serif;
+}
+h2 {
+    color: black;
+    font-size: 25px;
+    font-family: Times New Roman, serif , sans-serif;
+}
+
+h3 {
+    font-size: 10px;
+	flex: 1 1 100%;
+	margin: 0 10px 10px 0;
+	padding: 10px;
+	background-color:white;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+p {
+    color: black ;
+    font-size: 15px;
+    font-family: Times New Roman, serif , sans-serif;
+    
+}
+
+section {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+table, td {
+          border: 1px solid black;
+          /* cell spacing */
+          border-spacing: 5px;
+       }
+       td {
+          /* cell padding */
+          padding: 5px;
+       }
+/* Define grid layout for different screen sizes */
+.container {
+max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    grid-color: black;
+}
+.profile-pic {
+			max-width: 100px;
+			height:auto;
+			margin-bottom: 20px;
+			border-radius: 50%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		
+  
+ 
+		}
+		/* design for tablets */
+        @media only screen and (max-width: 768px) {
+        .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(40, 173, 190);
+}
+header {
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 25px;
+    font-family: Times New Roman, serif , sans-serif;
+}
+h2 {
+    color: black;
+    font-size: 25px;
+    font-family: Times New Roman, serif , sans-serif;
+}
+h3 {
+    font-size: 6px;
+	flex: 1 1 100%;
+	margin: 0 10px 10px 0;
+	padding: 10px;
+	background-color:white;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    font-family: Times New Roman, serif , sans-serif;
+    
+}
+
+section {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+table, td {
+          border: 1px solid black;
+          /* cell spacing */
+          border-spacing: 5px;
+       }
+       td {
+          /* cell padding */
+          padding: 5px;
+       }
+/* Define grid layout for different screen sizes */
+.container {
+max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    grid-color: black;
+}
+.profile-pic {
+			max-width: 100px;
+			height:auto;
+			margin-bottom: 20px;
+			border-radius: 50%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		
+  
+ 
+		}
+
+				/* design for mobile phones */
+        @media only screen and (max-width: 600px) {
+        
+            .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(56, 197, 21);
+}
+header {
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 25px;
+    font-family: Times New Roman, serif , sans-serif;
+}
+h2 {
+    color: black;
+    font-size: 25px;
+    font-family: Times New Roman, serif , sans-serif;
+}
+h3 {
+    font-size: 6px;
+	flex: 1 1 100%;
+	margin: 0 10px 10px 0;
+	padding: 10px;
+	background-color:white;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    color: black;
+    font-size: 15px;
+    font-family: Times New Roman, serif , sans-serif;
+	
+}
+
+section {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+table, td {
+          border: 1px solid black;
+          /* cell spacing */
+          border-spacing: 5px;
+       }
+       td {
+          /* cell padding */
+          padding: 5px;
+       }
+/* Define grid layout for different screen sizes */
+.container {
+max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    grid-color: black;
+}
+.profile-pic {
+			max-width: 100px;
+			height:auto;
+			margin-bottom: 20px;
+			border-radius: 50%;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+.about {
+	flex: 1 1 100%;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
+}
+  
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+           
+     	<img src="arnel.jpg" alt="Profile Picture" align="left" class="profile-pic">
+            <h1>Arnel T. Dela Torre</h1>
+            <p>Bachelor of Science in Information Technology</p>
+			
+			
+        </header>
+        <section class="about">
+            <h2>About Me</h2>
+            <h3>Name: Arnel Dela Torre</h3>
+			<h3>Age: 20</h3>
+			<h3>Adress: Brgy. Nauhang, Sipalay City</h3>
+			<h3>Contact no.: 09707223532</h3>
+			<h3>Email:arneldelatorre30@gmail.com</h3>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Hard Working</li>
+                <li>Good at Communication</li>
+                <li>Good Leader</li>
+                <li>Dedicate</li>
+            </ul>
+        </section>
+        <section class="hobbies">
+            <h2>Hobbies</h2>
+        <table>
+      <thead>
+         
+      </thead>
+      <tbody>
+		<ul>
+                <li>Playing Mobile Games</li>
+                <li>Playing Volleyball</li>
+                <li>Sleeping</li>
+                <li>Eating</li>
+            </ul>
+         <tr>
+             </table>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+            <table>
+      <thead>
+         <tr> 
+            <th>Levels</th>
+            <th>School Names</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            
+            <td>Elementary:</td>
+            <td>Cantaca Elementary School</td>
+         </tr>
+         <tr>
+            
+            <td>HighSchool:</td>
+            <td>Gil Montilla National High School</td>
+         </tr>
+        
+         <tr>
+            
+            <td>College:</td>
+            <td>Central Philippine State University</td>
+         </tr>
+         
+      </tbody>
+       
+   </table>
+        </section>
+        <section class="goals">
+            <h2>Future Goals</h2>
+            <h3>My future goal is to become a full-stack developer and work on exciting projects that make a positive impact on the world.</h3>
+        </section>
+    </div>
+</body>
+</html>
+
